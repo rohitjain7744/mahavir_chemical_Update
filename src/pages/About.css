@@ -1,0 +1,128 @@
+.about-page {
+  background: #f8fafc;
+  padding-bottom: 80px;
+  color: #1f2937;
+}
+
+/* HERO */
+.about-hero {
+  background: linear-gradient(
+    rgba(11, 94, 215, 0.1),
+    rgba(11, 94, 215, 0.25) 
+  ), url(../assets/8803-removebg-preview.png);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  color: #0b5ed7;
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.about-hero p {
+  color: #374151;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* SECTIONS */
+.about-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  color: #0b5ed7;
+  margin-bottom: 18px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #374151;
+}
+
+/* LIGHT BG */
+.about-section.light {
+  background: #ffffff;
+  padding: 50px 20px;
+  border-radius: 16px;
+}
+
+/* VALUES */
+.values-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.values-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.values-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0b5ed7;
+}
+
+/* TEAM */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.team-card h3 {
+  margin-bottom: 6px;
+}
+
+.team-card .role {
+  color: #0b5ed7;
+  font-weight: 500;
+}
+
+/* CERTIFICATIONS */
+.cert-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cert-list span {
+  background: #e7f1ff;
+  color: #0b5ed7;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

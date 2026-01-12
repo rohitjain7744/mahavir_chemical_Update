@@ -1,0 +1,29 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+
+img{
+  width: 20px;
+  height: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 72px;
+}

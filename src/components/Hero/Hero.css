@@ -1,0 +1,153 @@
+:root {
+  --blue-primary: #0b5ed7;
+  --blue-secondary: #084298;
+  --white: #ffffff;
+}
+
+/* ===============================
+   HERO (FIXED – NO TOP SPACE)
+================================ */
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  /* ✅ SHORT HERO */
+  height: 75vh;          /* desktop short hero */
+  min-height: 420px;
+}
+
+/* SLIDES */
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1.2s ease, transform 6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* OVERLAY */
+.hero-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(11, 94, 215, 0.1),
+    rgba(11, 94, 215, 0.75)
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.hero-content {
+  position: absolute;     /* 🔥 IMPORTANT */
+  inset: 0;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  color: #eaf2ff;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* DOTS */
+.slider-dots {
+  position: absolute;
+  bottom: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--white);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+    min-height: 360px;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 6%;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

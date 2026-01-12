@@ -1,0 +1,73 @@
+/* SECTION */
+.vision {
+  padding: 90px 0;
+  background: #f9fafb;
+}
+
+/* CONTAINER */
+.vision-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 8%;
+  text-align: center;
+}
+
+/* TAG */
+.vision-tag {
+  display: inline-block;
+  background: #e7f1ff;
+  color: #0b5ed7;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* HEADING */
+.vision-container h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 22px;
+  line-height: 1.25;
+}
+
+/* TEXT */
+.vision-container p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* SUBTLE EMPHASIS (OPTIONAL) */
+.vision-container p strong {
+  color: #0b5ed7;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vision {
+    padding: 70px 0;
+  }
+
+  .vision-container h2 {
+    font-size: 2rem;
+  }
+
+  .vision-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-container {
+    padding: 0 6%;
+  }
+
+  .vision-container h2 {
+    font-size: 1.8rem;
+  }
+}

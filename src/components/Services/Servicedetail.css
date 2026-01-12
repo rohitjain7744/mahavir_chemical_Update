@@ -1,0 +1,17 @@
+.details-box {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  border-radius: 12px;
+  padding: 0 20px;
+  margin-top: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* When open */
+.details-box.open {
+  max-height: 300px;
+  padding: 20px;
+}

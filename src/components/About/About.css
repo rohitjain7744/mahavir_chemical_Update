@@ -1,0 +1,47 @@
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 70px;
+  gap: 60px;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  color: #111;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 20px;
+  max-width: 450px;
+}
+
+.about-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #e66f00;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #cc6200;
+}
+
+.about-right img {
+  width: 420px;
+  border-radius: 14px;
+  filter: drop-shadow(0px 10px 40px rgba(0,0,0,0.2));
+}
