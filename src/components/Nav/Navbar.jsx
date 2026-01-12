@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,11 +19,11 @@ const Navbar = () => {
 
           {/* DESKTOP MENU */}
           <nav className="nav-desktop">
-            <NavLink to="/" end>Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/Product">Product</NavLink>
-            <NavLink to="/service">Services</NavLink>
-            <NavLink to="/contact">Contact Us</NavLink>
+            <Link to="/" end>Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/Product">Product</Link>
+            <Link to="/service">Services</Link>
+            <Link to="/contact">Contact Us</Link>
           </nav>
 
           {/* HAMBURGER */}
